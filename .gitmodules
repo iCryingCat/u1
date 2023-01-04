@@ -1,0 +1,3 @@
+[submodule "u2xlsx"]
+	path = u2xlsx
+	url = https://github.com/iCryingCat/com.baize.u2xlsx.git
