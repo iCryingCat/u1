@@ -1,3 +1,9 @@
+[submodule "PackagesLocal/com.baize.u2tool"]
+	path = PackagesLocal/com.baize.u2tool
+	url = git@github.com:iCryingCat/com.baize.u2tool.git
+[submodule "PackagesLocal/com.baize.u2framework"]
+	path = PackagesLocal/com.baize.u2framework
+	url = git@github.com:iCryingCat/com.baize.u2framework.git
 [submodule "u2xlsx"]
 	path = u2xlsx
-	url = https://github.com/iCryingCat/com.baize.u2xlsx.git
+	url = git@github.com:iCryingCat/com.baize.u2xlsx.git
