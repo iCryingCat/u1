@@ -1,15 +1,13 @@
 #define XLUA_ENABLE
 using System.IO;
 using System.Text;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 using UnityEngine;
+using Com.BaiZe.U2Tool;
 
 #if XLUA_ENABLE
 using XLua;
+
 #endif
 
 namespace Com.BaiZe.U2Framework
@@ -37,7 +35,7 @@ namespace Com.BaiZe.U2Framework
 
         private byte[] LoopLogicLoader(ref string filepath)
         {
-            string bootstrap = Path.Combine(Application.dataPath, filepath + ".lua");
+            string bootstrap = Path.Combine(Application.dataPath.GetDirectory(), "LoopLogic", filepath + ".lua");
             return Encoding.UTF8.GetBytes(File.ReadAllText(bootstrap));
         }
     }

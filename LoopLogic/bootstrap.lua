@@ -1,10 +1,6 @@
 package.path = package.path .. ';./?.lua'
-require('u2lua/base/class')
+require('preload')
 
-_C.UITest = {}
-local UITest = __Class__(_C.UITest)
-function UITest:__Ctor__(x, y)
-    print(x, y)
-end
+require('ui/main/ui_main')
 
-local uiTest = UITest:__New__(1, 5)
+UIManager.Show(UIMain)
