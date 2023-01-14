@@ -7,3 +7,6 @@
 [submodule "u2xlsx"]
 	path = u2xlsx
 	url = git@github.com:iCryingCat/com.baize.u2xlsx.git
+[submodule "LoopLogic/lua/u2lua"]
+	path = LoopLogic/lua/u2lua
+	url = git@github.com:iCryingCat/u2lua.git

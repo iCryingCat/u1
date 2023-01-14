@@ -1,5 +1,5 @@
 package.path = package.path .. ';./?.lua'
-require('preload')
+require('module/preload')
 
 require('ui/main/ui_main')
 

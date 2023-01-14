@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5641499492532771611}
   - component: {fileID: 7444204138244789444}
   m_Layer: 5
-  m_Name: '#Button'
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 6868032747160062503}
   - component: {fileID: 1749985755633261370}
   - component: {fileID: 51479685883260483}
-  - component: {fileID: 1930367848433582765}
+  - component: {fileID: 8567162216887387467}
   m_Layer: 5
   m_Name: main
   m_TagString: Untagged
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1930367848433582765
+--- !u!114 &8567162216887387467
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -209,11 +209,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7181690373633091152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afcdf5aeddc2feb4fa8dd3800378e6c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f98e9c029353da43a0b2cc0de152e80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  view: {fileID: 0}
-  varsArr:
+  listCompUnits:
   - fieldName: btn
     gameObject: {fileID: 3686759305411245816}
     component: {fileID: 7444204138244789444}

@@ -35,7 +35,7 @@ namespace Com.BaiZe.U2Framework
 
         private byte[] LoopLogicLoader(ref string filepath)
         {
-            string bootstrap = Path.Combine(Application.dataPath.GetDirectory(), "LoopLogic", filepath + ".lua");
+            string bootstrap = Path.GetFullPath(Path.Combine(Application.dataPath, "../LoopLogic/lua", filepath + ".lua"));
             return Encoding.UTF8.GetBytes(File.ReadAllText(bootstrap));
         }
     }
