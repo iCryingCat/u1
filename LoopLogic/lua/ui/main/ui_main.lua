@@ -1,20 +1,21 @@
 require 'u2lua/framework/ui/base_ui_entity'
+UIMain = {}
+local property = __Class(UIMain):__Extends(BaseUIEntity)
 
-_CLS.UIMain = {}
-_CLS.UIMain.pathAsset = 'main/main.prefab'
-UIMain = __Class(_CLS.UIMain):__Extends(BaseUIEntity)
-
-local btn = nil
-
-function UIMain:OnBindEvents()
-    btn.onClick:AddListener(function()
-    end)
-end
-
-function UIMain:OnShowed()
+function property:OnShowed()
     print("main ui showed")
 end
 
-function UIMain:BindComponentUnits()
-    btn = self:GetComponentUnit(0)
+function property:OnBindEvents()
+    self.btnButton.onClick:AddListener(function()
+        print("click")
+    end)
 end
+
+--[[Unity Lua Auto Define++]]
+UIMain.pathAsset = "main/main.prefab"
+function UIMain:BindComponentUnits()
+    self.btnButton = self:GetComponentUnit(0) --Button
+end
+
+--[[Unity Lua Auto Define--]]

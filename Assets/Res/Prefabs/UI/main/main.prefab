@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 6868032747160062503}
   - component: {fileID: 1749985755633261370}
   - component: {fileID: 51479685883260483}
-  - component: {fileID: 8567162216887387467}
+  - component: {fileID: 1582835999143603842}
   m_Layer: 5
   m_Name: main
   m_TagString: Untagged
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8567162216887387467
+--- !u!114 &1582835999143603842
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,9 +213,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listCompUnits:
-  - fieldName: btn
+  - fieldName: btnButton
     gameObject: {fileID: 3686759305411245816}
     component: {fileID: 7444204138244789444}
+  luaUIEntityRefPath: E:/code/unity/u1/LoopLogic/lua/ui/main/ui_main.lua
   layer: 2
   node: 1
   clip: {fileID: 0}
