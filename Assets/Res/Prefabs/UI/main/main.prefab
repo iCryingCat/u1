@@ -216,6 +216,9 @@ MonoBehaviour:
   - fieldName: btnButton
     gameObject: {fileID: 3686759305411245816}
     component: {fileID: 7444204138244789444}
+  - fieldName: txtTest
+    gameObject: {fileID: 7263214664456384064}
+    component: {fileID: 4216557562665713314}
   luaUIEntityRefPath: E:/code/unity/u1/LoopLogic/lua/ui/main/ui_main.lua
   layer: 2
   node: 1

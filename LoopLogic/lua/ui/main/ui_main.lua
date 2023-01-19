@@ -1,21 +1,17 @@
-require 'u2lua/framework/ui/base_ui_entity'
-UIMain = {}
-local property = __Class(UIMain):__Extends(BaseUIEntity)
+UIMain = {
+    --[[UNITY LUA AUTO INJECT THEN]]
+    btnButton = 0, --Button
+    txtTest = 1, --TextMeshProUGUI
+    pathAsset = "main/main.prefab",
+    --[[UNITY LUA AUTO INJECT END]]
+}
 
-function property:OnShowed()
+function UIMain:OnShowed()
     print("main ui showed")
 end
 
-function property:OnBindEvents()
+function UIMain:OnBindEvents()
     self.btnButton.onClick:AddListener(function()
         print("click")
     end)
 end
-
---[[Unity Lua Auto Define++]]
-UIMain.pathAsset = "main/main.prefab"
-function UIMain:BindComponentUnits()
-    self.btnButton = self:GetComponentUnit(0) --Button
-end
-
---[[Unity Lua Auto Define--]]

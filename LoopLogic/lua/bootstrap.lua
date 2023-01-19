@@ -1,7 +1,7 @@
 package.path = package.path .. ';./?.lua'
-require('module/preload')
-
+require('u2lua/framework/unity/d')
+require('u2lua/base/class')
+require('u2lua/framework/ui/ui_manager')
 require('ui/main/ui_main')
 
-print(UIMain)
-UIManager.Show(UIMain)
+UIManager.ShowUI(UIMain)
