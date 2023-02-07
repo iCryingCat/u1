@@ -22,7 +22,7 @@ namespace Com.BaiZe.U2Framework
         {
 #if XLUA_ENABLE
             this.luaEnv.AddLoader(this.LoopLogicLoader);
-            this.luaEnv.DoString("require 'bootstrap'");
+            this.luaEnv.DoString("require 'game_launcher'");
 #endif
         }
 
@@ -35,8 +35,14 @@ namespace Com.BaiZe.U2Framework
 
         private byte[] LoopLogicLoader(ref string filepath)
         {
-            string bootstrap = Path.GetFullPath(Path.Combine(Application.dataPath, "../LoopLogic/lua", filepath + ".lua"));
-            return Encoding.UTF8.GetBytes(File.ReadAllText(bootstrap));
+            string luaGameLauncher = null;
+#if UNITY_EDITOR
+            luaGameLauncher = Path.Combine("../lua", filepath + ".lua");
+#else
+            luaGameLauncher = Path.Combine( "lua", filepath + ".lua");
+#endif
+            if (luaGameLauncher == null) ;
+            return Encoding.UTF8.GetBytes(ResourceManager.ReadAllText(luaGameLauncher));
         }
     }
 }
