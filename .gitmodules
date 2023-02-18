@@ -1,12 +1,12 @@
-[submodule "PackagesLocal/com.baize.u2tool"]
-	path = PackagesLocal/com.baize.u2tool
-	url = git@github.com:iCryingCat/com.baize.u2tool.git
-[submodule "PackagesLocal/com.baize.u2framework"]
-	path = PackagesLocal/com.baize.u2framework
-	url = git@github.com:iCryingCat/com.baize.u2framework.git
+[submodule "PackagesLocal/game-base"]
+	path = PackagesLocal/game-base
+	url = git@github.com:iCryingCat/game-base.git
+[submodule "PackagesLocal/ui-framework"]
+	path = PackagesLocal/ui-framework
+	url = git@github.com:iCryingCat/ui-framework.git
+[submodule "PackagesLocal/sharp-toolset"]
+	path = PackagesLocal/sharp-toolset
+	url = git@github.com:iCryingCat/sharp-toolset.git
 [submodule "u2xlsx"]
 	path = u2xlsx
 	url = git@github.com:iCryingCat/com.baize.u2xlsx.git
-[submodule "lua/u2lua"]
-	path = lua/u2lua
-	url = git@github.com:iCryingCat/u2lua.git

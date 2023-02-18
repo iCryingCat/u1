@@ -1,10 +1,11 @@
 {
   "dependencies": {
-    "com.baize.u2framework": "file:../PackagesLocal/com.baize.u2framework",
-    "com.baize.u2tool": "file:../PackagesLocal/com.baize.u2tool",
-    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+    "com.baize.game-base": "file:../PackagesLocal/game-base",
+    "com.baize.sharp-toolset": "file:../PackagesLocal/sharp-toolset",
+    "com.baize.ui-framework": "file:../PackagesLocal/ui-framework",
     "com.unity.collab-proxy": "1.17.7",
     "com.unity.feature.development": "1.0.1",
+    "com.unity.ide.rider": "3.0.18",
     "com.unity.ide.vscode": "1.2.5",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.6.4",

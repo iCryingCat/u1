@@ -1,26 +1,22 @@
 {
   "dependencies": {
-    "com.baize.u2framework": {
-      "version": "file:../PackagesLocal/com.baize.u2framework",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.baize.u2tool": "1.0.1",
-        "com.cysharp.unitask": "2.3.3"
-      }
-    },
-    "com.baize.u2tool": {
-      "version": "file:../PackagesLocal/com.baize.u2tool",
+    "com.baize.game-base": {
+      "version": "file:../PackagesLocal/game-base",
       "depth": 0,
       "source": "local",
       "dependencies": {}
     },
-    "com.cysharp.unitask": {
-      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+    "com.baize.sharp-toolset": {
+      "version": "file:../PackagesLocal/sharp-toolset",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "73d86259ce31ce7f4dfe1d028ea1c3edf96c23e4"
+      "source": "local",
+      "dependencies": {}
+    },
+    "com.baize.ui-framework": {
+      "version": "file:../PackagesLocal/ui-framework",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
     },
     "com.unity.collab-proxy": {
       "version": "1.17.7",
@@ -40,7 +36,7 @@
     },
     "com.unity.ext.nunit": {
       "version": "1.0.6",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.cn"
@@ -60,8 +56,8 @@
       }
     },
     "com.unity.ide.rider": {
-      "version": "3.0.16",
-      "depth": 1,
+      "version": "3.0.18",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.ext.nunit": "1.0.6"
